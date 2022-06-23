@@ -36,7 +36,7 @@
 			--black: #000;
 			--purple: #B55AFD;
 			--darkPurple: #231F20;
-			--baseBlue: #3EABE7;
+			--baseBlue: #4679E1;
 			--navyBlue1: #004A98;
 		}
 
@@ -96,6 +96,11 @@
 			background-color: var(--purple);
 		}
 
+		.bg-hex {
+			background-image: url("https://i.ibb.co/5n7fWSw/Hxagon-Pattern.png");
+			background-repeat: repeat;
+		}
+
 		#hero {
 			min-height: 30rem;
 			width: 100%;
@@ -113,31 +118,31 @@
 			background-position: 50% 70%;
 			background-repeat: no-repeat;
 			background-size: cover;
-			filter: blur(4px) brightness(40%);
+			filter: blur(2px) brightness(50%);
 			z-index: 0;
 		}
 
 		.hero-content {
-			margin: 2rem auto;
+			margin: 2rem auto 0;
 			width: 70%;
 			z-index: 50;
 		}
 
 		.hero-content>* {
-			margin: 2rem 0.5rem;
+			margin: 2rem 0.5rem 0;
 		}
 
 		.hero-buttons {
 			margin-top: 2rem;
-			margin-bottom: 0;
 		}
 
 		#features {
-			padding: 3rem 1rem;
+			padding: 1rem;
 		}
 
 		.feature {
 			transition: 0.4s;
+			margin: 1.5rem auto;
 		}
 
 		.feature:hover {
@@ -149,6 +154,11 @@
 			line-height: 2.5;
 			padding: 1rem;
 			color: var(--navyBlue1);
+		}
+
+		#about {
+			background-color: var(--baseBlue);
+			padding: 1rem;
 		}
 
 		#about .card {
@@ -167,9 +177,29 @@
 			padding: 1.5rem;
 		}
 
+		#about .row > :nth-child(1) {
+			padding: 1rem;
+		}
+
+		#about .ijarts-cover {
+			margin: 0.5rem auto 1.5rem;
+			width: 210px;
+			height: 297px;
+			border: 2px solid yellow;
+			-moz-box-shadow: 3px 3px 5px 6px #555;
+			-webkit-box-shadow: 3px 3px 5px 6px #555;
+			box-shadow: 3px 3px 5px 6px #555;
+		}
+
+		#about .coming-soon {
+			background-color: var(--purple);
+			color: var(--white);
+			font-weight: 500;
+		}
+
 		#about .card-text {
-			max-width: 75%;
-			font-size: 1.2rem;
+			padding: 4rem 1rem 2rem;
+			line-height: 1.75;
 		}
 	</style>
 </head>
@@ -246,7 +276,7 @@
 
 
 	<!-- FEATURES Section Starts -->
-	<section id="features">
+	<section id="features" class="bg-hex">
 		<div class="container">
 			<div class="row text-center" style="padding: 4rem">
 
@@ -287,23 +317,46 @@
 	<!-- FEATURES Section Ends -->
 
 	<!-- ABOUT Section Starts -->
-	<section id="about" class="card bg-secondary">
-		<div class="card-body">
-			<!-- <h5 class="card-title display-6 fw-bold">What is IJARTS ?</h5> -->
-			<p class="card-text text-white">
-				<strong>International Journal of Advanced Research Trends in Science
-					(IJARTS)</strong>
-				is an upcoming open access multidisciplinary science research journal.
-				The newly arrived journal will be spread and subscribed worldwide.
-				IJARTS is a bi-annual online journal and the upcoming first volume and
-				the first issue will procure ISSN after its online publication.
-			</p>
+	<section id="about" class="card text-white">
+		<div class="card-body text-white">
+			<h3 class="card-title display-5 fw-bold mb-5">About IJARTS ?</h3>
+			<div class="row">
+				<div class="col-lg-5">
+					<div class="ijarts-cover"></div>
+					<a target="_blank" rel="noreferrer">
+						<span class="btn btn-lg px-4 coming-soon" title="Aura International">
+							Coming Soon...
+						</span>
+					</a>
+				</div>
+				<div class="col-lg-7">
+					<p class="card-text fs-5 text-start fw-light">
+						International Journal of Advanced Research Trends in Science (IJARTS)
+						is an upcoming open access multidisciplinary science research journal.
+						The newly arrived journal will be spread and subscribed worldwide.
+						IJARTS is a bi-annual online journal and the upcoming first volume and
+						the first issue will procure ISSN after its online publication.
+					</p>
+					<div class="about-buttons	d-grid gap-2 d-sm-flex justify-content-sm-center">
+						<a href="#">
+							<button type="button" class="btn btn-outline-light btn-lg px-4 me-sm-3">
+								Subscription
+							</button>
+						</a>
+						<a href="#" target="_blank" rel="noreferrer">
+							<button type="button" class="btn btn-outline-light btn-lg px-4" title="Aura International">
+								Submit Article
+							</button>
+						</a>
+					</div>
+					</div>
+					</div>
 		</div>
 	</section>
 	<!-- ABOUT Section Ends -->
 
 	<!-- Subscription Section -->
-	<section id="subscribe" class="card bg-primary">
+	<section id="subscribe" class="card bg-secondary">
 		<div class="card-body">
 			<h5 class="card-title display-6 fw-bold">Subscription Rate</h5>
 			<p class="card-text">
@@ -342,8 +395,8 @@
 		<a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 	</footer>
 	<script>
-		const bottomOfHero = document.getElementById("hero").getBoundingClientRect().bottom
-		// document.getElementById("hero-bg").style.height = `${bottomOfHero}px`
+		// const bottomOfHero = document.getElementById("hero").getBoundingClientRect().bottom
+							// document.getElementById("hero-bg").style.height = `${bottomOfHero}px`
 	</script>
 </body>
 
