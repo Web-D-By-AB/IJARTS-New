@@ -69,7 +69,8 @@
 		h1,
 		h2,
 		h3,
-		h4 {
+		h4,
+		.text-serif {
 			font-family: 'Source Serif Pro', serif;
 		}
 
@@ -104,9 +105,17 @@
 			background-color: var(--purple);
 		}
 
+		.bg-baseBlue {
+			background-color: var(--baseBlue);
+		}
+
 		.bg-hex {
 			background-image: url("https://i.ibb.co/5n7fWSw/Hxagon-Pattern.png");
 			background-repeat: repeat;
+		}
+
+		.text-baseBlue {
+			color: var(--baseBlue);
 		}
 
 		.text-blue {
@@ -165,10 +174,6 @@
 			line-height: 2.5;
 			padding: 1rem;
 			color: var(--navyBlue1);
-		}
-
-		#about {
-			background-color: var(--baseBlue);
 		}
 
 		#about .card {
@@ -263,6 +268,7 @@
 	</nav>
 	<!-- Nav Bar Ends -->
 
+
 	<!-- Hero Section Starts -->
 	<section id="hero" class="hero text-dark d-flex justify-content-center">
 		<div id="hero-bg"></div>
@@ -339,12 +345,13 @@
 	</section>
 	<!-- FEATURES Section Ends -->
 
+
 	<!-- ABOUT Section Starts -->
-	<section id="about" class="card text-white">
+	<section id="about" class="card bg-baseBlue text-white">
 		<div class="card-body text-white">
 			<h3 class="card-title display-5 fw-bold mb-5">About IJARTS</h3>
 			<div class="row d-flex flex-column flex-lg-row">
-				<div class="col-lg-5">
+				<div class="col-lg-4">
 					<div class="ijarts-cover"></div>
 					<a target="_blank" rel="noreferrer">
 						<span class="btn btn-lg px-4 coming-soon" title="Aura International">
@@ -352,7 +359,7 @@
 						</span>
 					</a>
 				</div>
-				<div class="col-lg-7">
+				<div class="col-lg-8">
 					<p class="card-text fs-5 text-justify text-lg-start fw-light">
 						International Journal of Advanced Research Trends in Science (IJARTS)
 						is an upcoming open access multidisciplinary science research journal.
@@ -366,17 +373,18 @@
 								Subscription
 							</button>
 						</a>
-						<a href="#" target="_blank" rel="noreferrer">
+						<a href="#">
 							<button type="button" class="btn btn-outline-light btn-lg px-4" title="Aura International">
 								Submit Article
 							</button>
 						</a>
 					</div>
 				</div>
-				</div>
+			</div>
 		</div>
 	</section>
 	<!-- ABOUT Section Ends -->
+
 
 	<!-- OBJECTIVES Section Starts -->
 	<section id="objectives" class="bg-hex">
@@ -405,37 +413,54 @@
 				</div>
 			</div>
 	</section>
-	
 	<!-- OBJECTIVES Section Ends -->
 
-	<!-- Subscription Section -->
-	<section id="subscription" class="card bg-secondary">
-		<div class="card-body">
-			<h5 class="card-title display-6 fw-bold">Subscription Rate</h5>
+	<!-- SUBSCRIPTION Section Starts -->
+	<section id="subscription" class="card bg-baseBlue">
+		<div class="card-body text-white">
+			<h3 class="card-title display-5 fw-bold my-3">Subscription Plan</h3>
 			<p class="card-text">
-			<div class="row">
+			<div class="row d-flex justify-content-center">
 				<div class="col-6">
-					<div class="card bg-warning" style="margin: 1rem 2.5rem; min-width: 155px;">
-						<div class="card-body">
-							<div class="card-text">
-								<h4>For India: <br /> INR 1500/-</h4>
+					<div class="card w-75" style=" margin: 1rem auto; min-width: 155px;">
+						<div class="card-body py-5">
+							<div class="h4 text-dark">
+								<span class="text-serif fw-bold"> Subscription for India</span> <br />
+								<span class="text-baseBlue d-inline-block fs-2 fw-bold pt-3 mb-0">₹1500</span> / year
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-6">
-					<div class="card bg-warning" style="margin: 1rem 2.5rem; min-width: 155px;">
-						<div class="card-body">
-							<div class="card-text">
-								<h4>For Abroad:<br />USD 400/-</h4>
+					<div class="card w-75" style="margin: 1rem auto; min-width: 155px;">
+						<div class="card-body py-5">
+							<div class="h4 text-dark">
+								<span class="text-serif fw-bold"> Subscription for Abroad</span> <br />
+								<span class="text-baseBlue d-inline-block fs-2 fw-bold pt-3 mb-0">$400</span> / year
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			</p>
+			<div class="mt-5 mx-auto fs-4 w-75">
+				Subscription charge should be paid in favour of AURA INTERNATIONAL by online account deposit or D.D.
+				or cheque deposit.
+			</div>
+			<div class="card-body bg-purple text-white mt-4 w-75 mx-auto">
+				<div class="card-title fw-bold h3">Bank Account Details:</div>
+				<p class="fs-5 my-4">
+					AURA INTERNATIONAL <br />
+					Bank Of Baroda <br />
+					Chakdaha Branch, Chakdaha- 741222 <br />
+					<br />
+					A/c No: <span class="fw-bold">37170200000408</span><br />
+					IFSC Code: <span class="fw-bold">BARB0CHAKDA</span>
+				</p>
+			</div>
 		</div>
 	</section>
+	<!-- SUBSCRIPTION Section Ends -->
 
 	<!-- ------------------ -->
 
