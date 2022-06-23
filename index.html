@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>I J A R T S</title>
-	
+
 	<!-- Set Favicon and all icons -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -51,13 +51,14 @@
 			text-transform: capitalize;
 			/* position: sticky;
 			top: 0px; */
+			z-index: 100;
 		}
 
-		.navbar-brand > img {
+		.navbar-brand>img {
 			height: 2.5rem;
 		}
 
-		.navbar-nav > * {
+		.navbar-nav>* {
 			margin: 0.5rem 1rem;
 		}
 
@@ -95,7 +96,7 @@
 			background-color: var(--purple);
 		}
 
-		.hero {
+		#hero {
 			min-height: 30rem;
 			width: 100%;
 			margin: 0;
@@ -113,12 +114,13 @@
 			background-repeat: no-repeat;
 			background-size: cover;
 			filter: blur(4px) brightness(40%);
-			z-index: -50;
+			z-index: 0;
 		}
 
 		.hero-content {
 			margin: 2rem auto;
 			width: 70%;
+			z-index: 50;
 		}
 
 		.hero-content>* {
@@ -128,6 +130,25 @@
 		.hero-buttons {
 			margin-top: 2rem;
 			margin-bottom: 0;
+		}
+
+		#features {
+			padding: 3rem 1rem;
+		}
+
+		.feature {
+			transition: 0.4s;
+		}
+
+		.feature:hover {
+			cursor: pointer;
+			transform: scale(1.1);
+		}
+
+		.features-heading {
+			line-height: 2.5;
+			padding: 1rem;
+			color: var(--navyBlue1);
 		}
 
 		#about .card {
@@ -149,20 +170,6 @@
 		#about .card-text {
 			max-width: 75%;
 			font-size: 1.2rem;
-		}
-
-		.feature {
-			transition: 0.4s;
-		}
-
-
-		.feature:hover {
-			cursor: pointer;
-			transform: scale(1.1);
-		}
-
-		.features-heading {
-			padding: 1rem;
 		}
 	</style>
 </head>
@@ -203,7 +210,7 @@
 	</nav>
 	<!-- Nav Bar Ends -->
 
-	<!-- Hero Section -->
+	<!-- Hero Section Starts -->
 	<section id="hero" class="hero text-dark d-flex justify-content-center">
 		<div id="hero-bg"></div>
 		<div class="hero-content text-center text-white">
@@ -235,9 +242,51 @@
 			</div>
 		</div>
 	</section>
-	<!-- ---------- -->
+	<!-- Hero Section Ends -->
 
-	<!-- ABOUT Section -->
+
+	<!-- FEATURES Section Starts -->
+	<section id="features">
+		<div class="container">
+			<div class="row text-center" style="padding: 4rem">
+
+				<div class="feature col-lg-3">
+					<i class="fas fa-lock-open fa-2x"></i><br />
+					<span class="features-heading h4 fw-bold">Open Access</span>
+					<!-- <p class="features-text">
+							So easy to use, even your dog could do it.
+						</p> -->
+				</div>
+
+				<div class="feature col-lg-3">
+					<i class="fas fa-network-wired fa-2x"></i><br />
+					<span class="features-heading h4 fw-bold">Multidisciplinary</span>
+					<!-- <p class="features-text">
+							We have all the dogs, the greatest dogs.
+						</p> -->
+				</div>
+
+				<div class="feature col-lg-3">
+					<i class="fas fa-users fa-2x"></i><br />
+					<span class="features-heading h4 fw-bold">Peer-Reviewed</span>
+					<!-- <p class="features-text">
+							Find the love of your dog's life or your money back.
+						</p> -->
+				</div>
+
+				<div class="feature col-lg-3">
+					<i class="far fa-calendar-alt fa-2x"></i><br />
+					<span class="features-heading h4 fw-bold">Bi-annual</span>
+					<!-- <p class="features-text">
+							Find the love of your dog's life or your money back.
+						</p> -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- FEATURES Section Ends -->
+
+	<!-- ABOUT Section Starts -->
 	<section id="about" class="card bg-secondary">
 		<div class="card-body">
 			<!-- <h5 class="card-title display-6 fw-bold">What is IJARTS ?</h5> -->
@@ -251,48 +300,7 @@
 			</p>
 		</div>
 	</section>
-	<!-- ---------- -->
-
-	<!-- FEATURES Section -->
-	<section id="features">
-		<div class="container">
-			<div class="row text-center" style="padding: 4rem">
-				<div class="feature col-lg-3">
-					<i class="fas fa-lock-open fa-2x"></i><br />
-					<h3 class="features-heading">Open Access</h3>
-					<!-- <p class="features-text">
-							So easy to use, even your dog could do it.
-						</p> -->
-				</div>
-
-				<div class="col-lg-3">
-					<i class="fas fa-network-wired fa-2x"></i><br />
-					<h3 class="features-heading">Multidisciplinary</h3>
-					<!-- <p class="features-text">
-							We have all the dogs, the greatest dogs.
-						</p> -->
-				</div>
-
-				<div class="col-lg-3">
-					<i class="fas fa-users fa-2x"></i><br />
-					<h3 class="features-heading">Peer-Reviewed</h3>
-					<!-- <p class="features-text">
-							Find the love of your dog's life or your money back.
-						</p> -->
-				</div>
-
-				<div class="col-lg-3">
-					<i class="far fa-calendar-alt fa-2x"></i><br />
-					<h3 class="features-heading">Bi-annual</h3>
-					<!-- <p class="features-text">
-							Find the love of your dog's life or your money back.
-						</p> -->
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- ------------ -->
+	<!-- ABOUT Section Ends -->
 
 	<!-- Subscription Section -->
 	<section id="subscribe" class="card bg-primary">
@@ -335,7 +343,7 @@
 	</footer>
 	<script>
 		const bottomOfHero = document.getElementById("hero").getBoundingClientRect().bottom
-		document.getElementById("hero-bg").style.height = `${bottomOfHero}px`
+		// document.getElementById("hero-bg").style.height = `${bottomOfHero}px`
 	</script>
 </body>
 
