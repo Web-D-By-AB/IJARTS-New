@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>I J A R T S</title>
+	
+	<!-- Set Favicon and all icons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+
+	<!-- Add Bootstrap 5 via jsDelivr CDN -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+
+	<!-- Add Google Font from Google API -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Source+Serif+Pro:wght@300;400;600&display=swap"
+		rel="stylesheet">
+
+	<!-- Font Awesome Script -->
+	<script src="https://kit.fontawesome.com/c9b43d3d94.js" crossorigin="anonymous"></script>
+
+	<style>
+		:root {
+			--white: #FFF;
+			--black: #000;
+			--purple: #B55AFD;
+			--darkPurple: #231F20;
+			--baseBlue: #3EABE7;
+			--navyBlue1: #004A98;
+		}
+
+		body {
+			font-family: 'Open Sans', sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		nav.navbar {
+			padding: 1rem;
+			text-transform: capitalize;
+			/* position: sticky;
+			top: 0px; */
+		}
+
+		.navbar-brand > img {
+			height: 2.5rem;
+		}
+
+		.navbar-nav > * {
+			margin: 0.5rem 1rem;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4 {
+			font-family: 'Source Serif Pro', serif;
+		}
+
+		h1 {
+			font-weight: 600;
+		}
+
+		h2,
+		h3 {
+			font-weight: 400;
+		}
+
+		h4 {
+			font-weight: 300;
+		}
+
+		.btn {
+			font-weight: 600;
+		}
+
+		.btn-purple {
+			color: var(--purple);
+			border-color: var(--purple);
+		}
+
+		.btn-purple:hover {
+			color: var(--white);
+			background-color: var(--purple);
+		}
+
+		.hero {
+			min-height: 30rem;
+			width: 100%;
+			margin: 0;
+			padding: 1.5rem 0;
+		}
+
+		#hero-bg {
+			position: absolute;
+			height: 35rem;
+			width: 100%;
+			left: 0;
+			top: 0;
+			background-image: url("https://images.unsplash.com/photo-1507413245164-6160d8298b31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+			background-position: 50% 70%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			filter: blur(4px) brightness(40%);
+			z-index: -50;
+		}
+
+		.hero-content {
+			margin: 2rem auto;
+			width: 70%;
+		}
+
+		.hero-content>* {
+			margin: 2rem 0.5rem;
+		}
+
+		.hero-buttons {
+			margin-top: 2rem;
+			margin-bottom: 0;
+		}
+
+		#about .card {
+			text-align: center;
+			align-items: center;
+			justify-content: center;
+			border-radius: 0;
+		}
+
+		#about .card-body {
+			color: #bbb;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 1.5rem;
+		}
+
+		#about .card-text {
+			max-width: 75%;
+			font-size: 1.2rem;
+		}
+
+		.feature {
+			transition: 0.4s;
+		}
+
+
+		.feature:hover {
+			cursor: pointer;
+			transform: scale(1.1);
+		}
+
+		.features-heading {
+			padding: 1rem;
+		}
+	</style>
+</head>
+
+<body class="bg-light text-center">
+
+	<!-- Nav Bar Starts -->
+	<nav class="navbar navbar-dark navbar-expand-lg h5 fw-light">
+		<div class="container-fluid">
+			<a class="navbar-brand me-auto" href="#">
+				<img src="android-chrome-192x192.png" alt="">
+			</a>
+			<button class="navbar-toggler" name="button" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a class="nav-link active" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#footer">Objectives</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#pricing">Scope</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#cta">Pricing</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#cta">Editorial</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- Nav Bar Ends -->
+
+	<!-- Hero Section -->
+	<section id="hero" class="hero text-dark d-flex justify-content-center">
+		<div id="hero-bg"></div>
+		<div class="hero-content text-center text-white">
+			<h1 class="display-4 fw-bold">
+				International Journal of Advanced Research Trends in Science (IJARTS)
+			</h1>
+			<p class="h3 fw-light">
+				An open access multidisciplinary science research journal
+			</p>
+			<div class="col-lg-9 mx-auto">
+				<div class="
+							hero-buttons
+							d-grid
+							gap-2
+							d-sm-flex
+							justify-content-sm-center
+						">
+					<a href="#about">
+						<button type="button" class="btn btn-outline btn-purple btn-lg px-4 me-sm-3">
+							Submit Article
+						</button>
+					</a>
+					<a href="https://www.aura-international.org" target="_blank" rel="noreferrer">
+						<button type="button" class="btn btn-outline-light btn-lg px-4" title="Aura International">
+							Visit Publisher
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ---------- -->
+
+	<!-- ABOUT Section -->
+	<section id="about" class="card bg-secondary">
+		<div class="card-body">
+			<!-- <h5 class="card-title display-6 fw-bold">What is IJARTS ?</h5> -->
+			<p class="card-text text-white">
+				<strong>International Journal of Advanced Research Trends in Science
+					(IJARTS)</strong>
+				is an upcoming open access multidisciplinary science research journal.
+				The newly arrived journal will be spread and subscribed worldwide.
+				IJARTS is a bi-annual online journal and the upcoming first volume and
+				the first issue will procure ISSN after its online publication.
+			</p>
+		</div>
+	</section>
+	<!-- ---------- -->
+
+	<!-- FEATURES Section -->
+	<section id="features">
+		<div class="container">
+			<div class="row text-center" style="padding: 4rem">
+				<div class="feature col-lg-3">
+					<i class="fas fa-lock-open fa-2x"></i><br />
+					<h3 class="features-heading">Open Access</h3>
+					<!-- <p class="features-text">
+							So easy to use, even your dog could do it.
+						</p> -->
+				</div>
+
+				<div class="col-lg-3">
+					<i class="fas fa-network-wired fa-2x"></i><br />
+					<h3 class="features-heading">Multidisciplinary</h3>
+					<!-- <p class="features-text">
+							We have all the dogs, the greatest dogs.
+						</p> -->
+				</div>
+
+				<div class="col-lg-3">
+					<i class="fas fa-users fa-2x"></i><br />
+					<h3 class="features-heading">Peer-Reviewed</h3>
+					<!-- <p class="features-text">
+							Find the love of your dog's life or your money back.
+						</p> -->
+				</div>
+
+				<div class="col-lg-3">
+					<i class="far fa-calendar-alt fa-2x"></i><br />
+					<h3 class="features-heading">Bi-annual</h3>
+					<!-- <p class="features-text">
+							Find the love of your dog's life or your money back.
+						</p> -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ------------ -->
+
+	<!-- Subscription Section -->
+	<section id="subscribe" class="card bg-primary">
+		<div class="card-body">
+			<h5 class="card-title display-6 fw-bold">Subscription Rate</h5>
+			<p class="card-text">
+			<div class="row">
+				<div class="col-6">
+					<div class="card bg-warning" style="margin: 1rem 2.5rem; min-width: 155px;">
+						<div class="card-body">
+							<div class="card-text">
+								<h4>For India: <br /> INR 1500/-</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="card bg-warning" style="margin: 1rem 2.5rem; min-width: 155px;">
+						<div class="card-body">
+							<div class="card-text">
+								<h4>For Abroad:<br />USD 400/-</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</p>
+		</div>
+	</section>
+
+	<!-- ------------------ -->
+
+	<!-- ------------ -->
+	<footer>
+		Cover Photo by
+		<a href="https://unsplash.com/@theshubhamdhage?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Shubham
+			Dhage</a>
+		on
+		<a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+	</footer>
+	<script>
+		const bottomOfHero = document.getElementById("hero").getBoundingClientRect().bottom
+		document.getElementById("hero-bg").style.height = `${bottomOfHero}px`
+	</script>
+</body>
+
+</html>
