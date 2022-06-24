@@ -45,6 +45,7 @@
 			font-family: 'Open Sans', sans-serif;
 			margin: 0;
 			padding: 0;
+			max-width: 100%;
 		}
 
 		section {
@@ -130,14 +131,14 @@
 		}
 
 		#hero {
-			min-height: 30rem;
+			min-height: 36rem;
 			width: 100%;
 			margin: 0;
 		}
 
 		#hero-bg {
 			position: absolute;
-			height: 37rem;
+			height: 42rem;
 			width: 100%;
 			left: 0;
 			top: 0;
@@ -146,11 +147,12 @@
 			background-repeat: no-repeat;
 			background-size: cover;
 			filter: blur(2px) brightness(50%);
-			z-index: 0;
+			z-index: -100;
 		}
 
 		.hero-content {
 			margin: 2rem auto 0;
+			padding: 2rem 0;
 			width: 70%;
 			z-index: 50;
 		}
@@ -205,7 +207,7 @@
 
 		#about .ijarts-cover {
 			margin: 0.5rem auto 2rem;
-			width: 21rem;
+			width: 18rem;
 			height: auto;
 			-moz-box-shadow: 3px 3px 5px 6px #555;
 			-webkit-box-shadow: 3px 3px 5px 6px #555;
@@ -313,7 +315,7 @@
 			</a>
 			<button class="navbar-toggler" name="button" type="button" data-bs-toggle="collapse"
 				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-				aria-label="Toggle navigation">
+				aria-label="Toggle navigation" id="navbar-toggler-btn">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -361,7 +363,7 @@
 							d-sm-flex
 							justify-content-sm-center
 						">
-					<a href="#about">
+					<a href="#submission">
 						<button type="button" class="btn btn-outline btn-purple btn-lg px-4 me-sm-3">
 							Submit Article
 						</button>
@@ -381,11 +383,11 @@
 	<!-- FEATURES Section Starts -->
 	<section id="features" class="bg-light">
 		<div class="container">
-			<div class="row text-center" style="padding: 4rem">
+			<div class="row text-center" style="padding: 4rem 0">
 
 				<div class="feature col-lg-3">
-					<i class="fas fa-lock-open fa-2x"></i><br />
-					<span class="features-heading h4 fw-bold">Open Access</span>
+					<i class="fas fa-lock-open fa-2x mb-3"></i><br />
+					<span class="features-heading h4 fw-bold lh-1">Open Access</span>
 					<!-- <p class="features-text">
 							So easy to use, even your dog could do it.
 						</p> -->
@@ -425,7 +427,7 @@
 		<div class="card-body text-white">
 			<h3 class="card-title display-5 fw-bold mb-5">About IJARTS</h3>
 			<div class="row d-flex flex-column flex-lg-row">
-				<div class="col-lg-4 d-flex flex-column">
+				<div class="col-lg-5 d-flex flex-column">
 					<img src="https://i.ibb.co/pLYBmmG/IJARTS-Cover-Page.png" alt="IJARTS Cover" class="ijarts-cover d-block">
 					<span>
 						<span class="btn-lg px-5 py-3 coming-soon fs-4">
@@ -433,7 +435,7 @@
 						</span>
 					</span>
 				</div>
-				<div class="col-lg-8 d-flex flex-column justify-content-center mb-5">
+				<div class="col-lg-7 d-flex flex-column justify-content-center mb-5">
 					<p class="card-text fs-5 text-justify text-lg-start fw-light">
 						International Journal of Advanced Research Trends in Science (IJARTS)
 						is an upcoming open access multidisciplinary science research journal.
@@ -443,12 +445,12 @@
 					</p>
 					<div class="about-buttons	d-grid gap-2 d-sm-flex justify-content-sm-center">
 						<a href="#subscription">
-							<button type="button" class="btn btn-outline-light btn-lg px-4 me-sm-3 my-3">
+							<button type="button" class="btn btn-outline-light btn-lg px-4 me-sm-3 my-2">
 								Subscription
 							</button>
 						</a>
 						<a href="#submission">
-							<button type="button" class="btn btn-outline-light btn-lg px-4 my-3">
+							<button type="button" class="btn btn-outline-light btn-lg px-4 my-2">
 								Submit Article
 							</button>
 						</a>
@@ -573,7 +575,7 @@
 			<p class="card-text">
 			<div class="row d-flex justify-content-center">
 				<div class="col-6 d-flex">
-					<div class="card w-75 bg-yellow" style=" margin: 1rem auto; min-width: 155px;">
+					<div class="card w-75 bg-yellow" style=" margin: 1rem auto; min-width: 140px;">
 						<div class="card-body py-5">
 							<div class="h4 text-dark">
 								<span class="text-serif fw-bold"> Subscription for India</span> <br />
@@ -583,7 +585,7 @@
 					</div>
 				</div>
 				<div class="col-6 d-flex">
-					<div class="card w-75 bg-yellow" style="margin: 1rem auto; min-width: 155px;">
+					<div class="card w-75 bg-yellow" style="margin: 1rem auto; min-width: 140px;">
 						<div class="card-body py-5">
 							<div class="h4 text-dark">
 								<span class="text-serif fw-bold"> Subscription for Abroad</span> <br />
@@ -826,8 +828,8 @@
 					interested colleagues may send their resumes to:
 				</p>
 				<a href="mailto:editor.aurainternational@gmail.com"
-					class="btn btn-lg bg-light p-4 d-inline-block mx-auto mt-4 text-blue fw-bold h3">
-					editor.aurainternational@gmail.com
+					class="btn btn-lg bg-light px-4 py-3 d-inline-block mx-auto mt-4 text-blue fw-bold h3 mw-100">
+					<p class="w-100">editor.aurainternational@gmail.com</p>
 				</a>
 			</div>
 		</div>
@@ -869,7 +871,7 @@
 							</a>
 						</div>
 						<div class="mt-0 pt-0">
-							<a href="mailto:editor.aurainternational@gmail.com" class="btn btn-lg text-blue fw-bold mt-0 pt-0">
+							<a href="mailto:editor.aurainternational@gmail.com" class="btn btn-lg text-blue fw-bold m-0 p-0 w-100">
 								editor.aurainternational@gmail.com
 							</a>
 						</div>
@@ -887,8 +889,18 @@
 		</a>
 	</footer>
 	<script>
-		// const bottomOfHero = document.getElementById("hero").getBoundingClientRect().bottom
-							// document.getElementById("hero-bg").style.height = `${bottomOfHero}px`
+																																										const fixHeightOfHero = () => {
+																																											const bottomOfHero = document.getElementById("hero").getBoundingClientRect().bottom
+																																											document.getElementById("hero-bg").style.height = `${bottomOfHero > 42 * 16 ? bottomOfHero : 42 * 16}px`
+																																											console.log(bottomOfHero)
+																																										}
+																																										const navToggler = document.getElementById("navbar-toggler-btn")
+																																										navToggler.addEventListener("click", () => {
+																																											setTimeout(() => {
+																																												fixHeightOfHero()
+																																											}, 450)
+																																										})
+																																										fixHeightOfHero()
 	</script>
 </body>
 
