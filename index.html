@@ -150,14 +150,13 @@
 			z-index: -100;
 		}
 
-		.hero-content {
+		#hero-content {
 			margin: 2rem auto 0;
-			padding: 2rem 0;
 			width: 70%;
 			z-index: 50;
 		}
 
-		.hero-content>* {
+		#hero-content>* {
 			margin: 2rem 0.5rem 0;
 		}
 
@@ -253,7 +252,7 @@
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
-			filter: blur(2px) brightness(50%);
+			filter: blur(1px) brightness(50%);
 		}
 
 		#scope .scope-bg.scope-1 {
@@ -270,11 +269,12 @@
 
 		#scope .scope-bg.scope-4 {
 			background-image: url("https://images.unsplash.com/photo-1553406830-f6e44ac97624?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80");
-			filter: blur(3px) brightness(40%);
+			filter: blur(2px) brightness(40%);
 		}
 
 		#scope .scope-bg.scope-5 {
 			background-image: url("https://images.unsplash.com/photo-1627021741107-7bdd2782c5ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+			filter: brightness(40%);
 		}
 
 		#scope .scope-bg.scope-6 {
@@ -283,7 +283,7 @@
 
 		#scope .scope-bg.scope-7 {
 			background-image: url("https://cdn.pixabay.com/photo/2016/03/04/19/36/gears-1236578_960_720.jpg");
-			filter: blur(3px) brightness(40%);
+			filter: blur(2px) brightness(40%);
 		}
 
 		#scope .scope-bg.scope-8 {
@@ -301,6 +301,14 @@
 		#scope .scope-box .h3 {
 			z-index: 50;
 			font-weight: bolder;
+		}
+
+		@media only screen and (max-width: 600px) {
+			#hero-content {
+				margin: 0 auto;
+				width: 80%;
+				font-size: 2rem;
+			}
 		}
 	</style>
 </head>
@@ -348,7 +356,7 @@
 	<!-- Hero Section Starts -->
 	<section id="hero" class="hero text-dark d-flex justify-content-center">
 		<div id="hero-bg"></div>
-		<div class="hero-content text-center text-white">
+		<div id="hero-content" class="text-center text-white">
 			<h1 class="display-4 fw-bold">
 				International Journal of Advanced Research Trends in Science (IJARTS)
 			</h1>
@@ -889,18 +897,17 @@
 		</a>
 	</footer>
 	<script>
-																																										const fixHeightOfHero = () => {
-																																											const bottomOfHero = document.getElementById("hero").getBoundingClientRect().bottom
-																																											document.getElementById("hero-bg").style.height = `${bottomOfHero > 42 * 16 ? bottomOfHero : 42 * 16}px`
-																																											console.log(bottomOfHero)
-																																										}
-																																										const navToggler = document.getElementById("navbar-toggler-btn")
-																																										navToggler.addEventListener("click", () => {
-																																											setTimeout(() => {
-																																												fixHeightOfHero()
-																																											}, 450)
-																																										})
-																																										fixHeightOfHero()
+											const fixHeightOfHero = () => {
+												const bottomOfHero = document.getElementById("hero").getBoundingClientRect().bottom
+												document.getElementById("hero-bg").style.height = `${bottomOfHero > 42 * 16 ? bottomOfHero : 42 * 16}px`
+											}
+											const navToggler = document.getElementById("navbar-toggler-btn")
+											navToggler.addEventListener("click", () => {
+												setTimeout(() => {
+													fixHeightOfHero()
+												}, 450)
+											})
+											fixHeightOfHero()
 	</script>
 </body>
 
