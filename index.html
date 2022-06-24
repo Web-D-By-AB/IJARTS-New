@@ -38,6 +38,7 @@
 			--darkPurple: #231F20;
 			--baseBlue: #4679E1;
 			--navyBlue1: #004A98;
+			--yellow: #FFDE59;
 		}
 
 		body {
@@ -109,9 +110,15 @@
 			background-color: var(--baseBlue);
 		}
 
+		.bg-yellow {
+			background-color: var(--yellow);
+		}
+
 		.bg-hex {
 			background-image: url("https://i.ibb.co/5n7fWSw/Hxagon-Pattern.png");
 			background-repeat: repeat;
+			background-size: cover;
+			background-position: -40px 100%;
 		}
 
 		.text-baseBlue {
@@ -245,7 +252,7 @@
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
-			filter: blur(2px) brightness(60%);
+			filter: blur(2px) brightness(50%);
 		}
 
 		#scope .scope-bg.scope-1 {
@@ -275,6 +282,7 @@
 
 		#scope .scope-bg.scope-7 {
 			background-image: url("https://cdn.pixabay.com/photo/2016/03/04/19/36/gears-1236578_960_720.jpg");
+			filter: blur(3px) brightness(40%);
 		}
 
 		#scope .scope-bg.scope-8 {
@@ -479,13 +487,14 @@
 	</section>
 	<!-- OBJECTIVES Section Ends -->
 
+
 	<!-- SCOPE Section Starts -->
-	<section id="scope" class="card bg-baseBlue pb-0">
-		<div class="card-body text-white px-0 pb-0">
+	<section id="scope" class="card bg-light pb-0">
+		<div class="card-body text-blue px-0 pb-0">
 			<h3 class="card-title display-6 fw-bold my-3 pb-4">
 				The journal covers the following areas of science
 			</h3>
-			<div class="container-fluid -0">
+			<div class="container-fluid text-white">
 				<div class="row">
 					<div class="scope-box col-sm-6 col-xs-12 p-5">
 						<div class="scope-bg scope-1"></div>
@@ -554,6 +563,7 @@
 	</section>
 	<!-- SCOPE Section Ends -->
 
+
 	<!-- SUBSCRIPTION Section Starts -->
 	<section id="subscription" class="card bg-baseBlue">
 		<div class="card-body text-white">
@@ -586,7 +596,7 @@
 				Subscription charge should be paid in favour of AURA INTERNATIONAL by online account deposit or D.D.
 				or cheque deposit.
 			</div>
-			<div class="card-body bg-purple text-white mt-4 w-75 mx-auto">
+			<div class="card bg-purple text-white mt-4 w-75 mx-auto">
 				<div class="card-title fw-bold h3">Bank Account Details:</div>
 				<p class="fs-5 my-4">
 					AURA INTERNATIONAL <br />
@@ -600,6 +610,225 @@
 		</div>
 	</section>
 	<!-- SUBSCRIPTION Section Ends -->
+
+	<!-- EDITORIAL Section Starts -->
+	<section id="editorial" class="card bg-hex">
+		<div class="card-body text-blue text-center">
+			<h3 class="card-title display-5 fw-bold my-3">Editorial</h3>
+			<h4 class="rounded-1 d-inline-block fs-3 fw-normal mt-3 bg-purple text-white px-4 py-3 text-uppercase">
+				Chief Editors
+			</h4>
+			<div class="d-flex justify-content-around row py-5 text-baseBlue">
+				<div class="col-lg-6 d-flex">
+					<div class="card w-75 mx-auto my-3 chief-editor-card">
+						<div class="card-head">
+							<p class="h2">
+								Dr. Ruma Banerjee
+							</p>
+							<div class="fs-5">
+								PhD in Environmental Science.
+							</div>
+						</div>
+						<div class="card-body ds-6">
+							<div>Publisher, AURA INTERNATIONAL,</div>
+							<div>Rathtala, Lalpur, Chakdaha, </div>
+							<div>P.O.- Chakdaha, District- Nadia,</div>
+							<div>PIN- 741222, </div>
+							<div>West Bengal, India.</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 d-flex">
+					<div class="card w-75 mx-auto my-3 chief-editor-card">
+						<div class="card-head">
+							<p class="h2">
+								Dr. Ferit Gürbüz
+							</p>
+							<div class="fs-5">
+								Associate Professor.
+							</div>
+						</div>
+						<div class="card-body ds-6">
+							<div>Department of Mathematics Education,</div>
+							<div>Hakkari University, TURKEY. </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h4 class="rounded-1 d-inline-block fs-3 fw-normal mt-3 bg-purple text-white px-4 py-3 text-uppercase">
+				Editorial Board
+			</h4>
+			<div class="d-flex justify-content-around row py-5 text-baseBlue">
+				<div class="col-lg-4 col-9 d-flex">
+					<div class="card w-100 mx-auto my-3 chief-editor-card">
+						<div class="card-head">
+							<p class="h2">
+								Dr. Siranee Sreesai
+							</p>
+							<div class="fs-5">
+								Professor.
+							</div>
+						</div>
+						<div class="card-body ds-6">
+							<div>Department of Environmental Health Science,</div>
+							<div> Faculty of Public Health, Mahidol University, </div>
+							<div>Bangkok, Thailand.</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-9 d-flex">
+					<div class="card w-100 mx-auto my-3 chief-editor-card">
+						<div class="card-head">
+							<p class="h2">
+								Dr. Hari Mohan Srivastava
+							</p>
+							<div class="fs-5">
+								Professor Emeritus.
+							</div>
+						</div>
+						<div class="card-body ds-6">
+							<div>Department of Mathematics and Statistics, </div>
+							<div>University of Victoria, Victoria, </div>
+							<div>British Columbia V8W 3R4, Canada.</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-9 d-flex">
+					<div class="card w-100 mx-auto my-3 chief-editor-card">
+						<div class="card-head">
+							<p class="h2">
+								Dr. Varun Perumalla
+							</p>
+							<div class="fs-5">
+								Professor.
+							</div>
+						</div>
+						<div class="card-body ds-6">
+							<div>Enterprise Information Modeling Engineer</div>
+							<div>California Independent System Operator</div>
+							<div>Folsom, CA, USA.</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-9 d-flex">
+					<div class="card w-100 mx-auto my-3 chief-editor-card">
+						<div class="card-head">
+							<p class="h2">
+								Dr. S. Prabhu
+							</p>
+							<div class="fs-5">
+								Professor.
+							</div>
+						</div>
+						<div class="card-body ds-6">
+							<div>Department of Biotechnology,</div>
+							<div>Sri Venkateswara College of Engineering,</div>
+							<div>Sriperumbudur, India.</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-9 d-flex">
+					<div class="card w-100 mx-auto my-3 chief-editor-card">
+						<div class="card-head">
+							<p class="h2">
+								Dr. Giuseppe Murdaca
+							</p>
+							<div class="fs-5">
+								Professor.
+							</div>
+						</div>
+						<div class="card-body ds-6">
+							<div>Clinical Immunology Unit,</div>
+							<div>Department of Internal Medicine,</div>
+							<div>University of Genoa, Italy.</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-9 d-flex">
+					<div class="card w-100 mx-auto my-3 chief-editor-card">
+						<div class="card-head">
+							<p class="h2">
+								Dr. S.P.Mishra
+							</p>
+							<div class="fs-5">
+								Assistant Professor.
+							</div>
+						</div>
+						<div class="card-body ds-6">
+							<div>Depatment of Physics,</div>
+							<div>K.N.Govt. P.G.College, Gyanpur,</div>
+							<div>Bhadohi -221304, UP, India.</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-9 d-flex">
+					<div class="card w-100 mx-auto my-3 chief-editor-card">
+						<div class="card-head">
+							<p class="h2">
+								Dr. OLANREWAJU, Philip Oladapo
+							</p>
+							<div class="fs-5">
+								Professor.
+							</div>
+						</div>
+						<div class="card-body ds-6">
+							<div>Department of Mathematical Sciences,</div>
+							<div>Oduduwa University, Ipetumodu, Ile-Ife,</div>
+							<div>Osun State., Nigeria.</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-9 d-flex">
+					<div class="card w-100 mx-auto my-3 chief-editor-card">
+						<div class="card-head">
+							<p class="h2">
+								Dr. Ho Soon Min
+							</p>
+							<div class="fs-5">
+								Associate Professor.
+							</div>
+						</div>
+						<div class="card-body ds-6">
+							<div>INTI International University,</div>
+							<div>Jln BBN 12/1, Bandar Baru Nilai,</div>
+							<div>71800 Negeri Sembilan, Malaysia.</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-9 d-flex">
+					<div class="card w-100 mx-1 my-3 chief-editor-card">
+						<div class="card-head">
+							<p class="h2">
+								Dr. Chukwma Stephen Ezeonu
+							</p>
+							<div class="fs-5">
+								Professor.
+							</div>
+						</div>
+						<div class="card-body ds-6">
+							<div>Industrial Biochemistry and Environmental Biotechnology Unit,</div>
+							<div>Department of Biochemistry, </div>
+							<div>Faculty of Pure and Applied Sciences, </div>
+							<div>Federal University Wukari, 200 Katsina- ALA Road,</div>
+							<div>PMB 1020 Wukari, Taraba State, Nigeria.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="rounded-1 bg-baseBlue py-5 px-3 container">
+				<p class=" h4 text-white fw-normal text-justify">
+					IJARTS is the research journal that is subjected to editing by pervasive and skillful editorial board
+					mustering by renowned scientists and researchers. We are inviting expertise scientists, professors, and
+					researchers related to scientific research to become glowing members of the IJARTS editorial board. The
+					interested colleagues may send their resumes to:
+				</p>
+				<div class="rounded-1 bg-yellow p-4 d-inline-block mx-auto mt-4 text-dark h3">
+					editor.aurainternational@gmail.com
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- EDITORIAL Section Ends -->
 
 	<!-- ------------------ -->
 
