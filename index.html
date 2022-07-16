@@ -222,6 +222,8 @@
 		#about .card-text {
 			padding: 4rem 0 2rem;
 			line-height: 1.5;
+			text-align: justify;
+			text-justify: inter-word;
 		}
 
 		#objectives .objective-box {
@@ -308,6 +310,10 @@
 				margin: 0 auto;
 				width: 80%;
 				font-size: 2rem;
+			}
+
+			#about .card-text {
+				text-align: center;
 			}
 		}
 	</style>
@@ -444,7 +450,7 @@
 					</span>
 				</div>
 				<div class="col-lg-7 d-flex flex-column justify-content-center mb-5">
-					<p class="card-text fs-5 text-justify text-lg-start fw-light">
+					<p class="card-text fs-5 text-justify fw-light">
 						International Journal of Advanced Research Trends in Science (IJARTS)
 						is an upcoming open access multidisciplinary science research journal.
 						The newly arrived journal will be spread and subscribed worldwide.
@@ -897,17 +903,17 @@
 		</a>
 	</footer>
 	<script>
-											const fixHeightOfHero = () => {
-												const bottomOfHero = document.getElementById("hero").getBoundingClientRect().bottom
-												document.getElementById("hero-bg").style.height = `${bottomOfHero > 42 * 16 ? bottomOfHero : 42 * 16}px`
-											}
-											const navToggler = document.getElementById("navbar-toggler-btn")
-											navToggler.addEventListener("click", () => {
-												setTimeout(() => {
-													fixHeightOfHero()
-												}, 450)
-											})
-											fixHeightOfHero()
+			const fixHeightOfHero = () => {
+				const bottomOfHero = document.getElementById("hero").getBoundingClientRect().bottom
+				document.getElementById("hero-bg").style.height = `${bottomOfHero > 42 * 16 ? bottomOfHero : 42 * 16}px`
+			}
+			const navToggler = document.getElementById("navbar-toggler-btn")
+			navToggler.addEventListener("click", () => {
+				setTimeout(() => {
+					fixHeightOfHero()
+				}, 450)
+			})
+			fixHeightOfHero()
 	</script>
 </body>
 
