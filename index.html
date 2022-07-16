@@ -226,10 +226,17 @@
 			text-justify: inter-word;
 		}
 
+		#objectives .objective-boxes-container > :nth-child(1),
+		.objective-boxes-container > :nth-child(3) {
+			height: 15rem;
+		}
+
 		#objectives .objective-box {
 			min-width: 18rem;
 			align-self: center;
 			transition: 0.4s;
+			text-align: justify;
+			text-justify: inter-word;
 		}
 
 		#objectives .objective-box:hover {
@@ -481,7 +488,7 @@
 		<div class="card-body text-blue">
 			<h3 class="card-title display-5 fw-bold my-3">Aims and Objectives</h3>
 			<div class="container-fluid">
-				<div class="d-flex flex-column flex-lg-row p-5">
+				<div class="d-flex objective-boxes-container flex-column flex-lg-row p-5">
 					<div class="col objective-box my-2 bg-purple text-white px-3 py-5 mx-2">
 						<p class="fs-5 fw-light">
 							To present and publish advanced research work in a high quality research journal like IJARTS
