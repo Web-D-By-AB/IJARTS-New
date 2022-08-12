@@ -222,12 +222,21 @@
 		#about .card-text {
 			padding: 4rem 0 2rem;
 			line-height: 1.5;
+			text-align: justify;
+			text-justify: inter-word;
+		}
+
+		#objectives .objective-boxes-container > :nth-child(1),
+		.objective-boxes-container > :nth-child(3) {
+			height: 15rem;
 		}
 
 		#objectives .objective-box {
 			min-width: 18rem;
 			align-self: center;
 			transition: 0.4s;
+			text-align: justify;
+			text-justify: inter-word;
 		}
 
 		#objectives .objective-box:hover {
@@ -308,6 +317,10 @@
 				margin: 0 auto;
 				width: 80%;
 				font-size: 2rem;
+			}
+
+			#about .card-text {
+				text-align: center;
 			}
 		}
 	</style>
@@ -444,7 +457,7 @@
 					</span>
 				</div>
 				<div class="col-lg-7 d-flex flex-column justify-content-center mb-5">
-					<p class="card-text fs-5 text-justify text-lg-start fw-light">
+					<p class="card-text fs-5 text-justify fw-light">
 						International Journal of Advanced Research Trends in Science (IJARTS)
 						is an upcoming open access multidisciplinary science research journal.
 						The newly arrived journal will be spread and subscribed worldwide.
@@ -475,7 +488,7 @@
 		<div class="card-body text-blue">
 			<h3 class="card-title display-5 fw-bold my-3">Aims and Objectives</h3>
 			<div class="container-fluid">
-				<div class="d-flex flex-column flex-lg-row p-5">
+				<div class="d-flex objective-boxes-container flex-column flex-lg-row p-5">
 					<div class="col objective-box my-2 bg-purple text-white px-3 py-5 mx-2">
 						<p class="fs-5 fw-light">
 							To present and publish advanced research work in a high quality research journal like IJARTS
@@ -897,17 +910,17 @@
 		</a>
 	</footer>
 	<script>
-											const fixHeightOfHero = () => {
-												const bottomOfHero = document.getElementById("hero").getBoundingClientRect().bottom
-												document.getElementById("hero-bg").style.height = `${bottomOfHero > 42 * 16 ? bottomOfHero : 42 * 16}px`
-											}
-											const navToggler = document.getElementById("navbar-toggler-btn")
-											navToggler.addEventListener("click", () => {
-												setTimeout(() => {
-													fixHeightOfHero()
-												}, 450)
-											})
-											fixHeightOfHero()
+			const fixHeightOfHero = () => {
+				const bottomOfHero = document.getElementById("hero").getBoundingClientRect().bottom
+				document.getElementById("hero-bg").style.height = `${bottomOfHero > 42 * 16 ? bottomOfHero : 42 * 16}px`
+			}
+			const navToggler = document.getElementById("navbar-toggler-btn")
+			navToggler.addEventListener("click", () => {
+				setTimeout(() => {
+					fixHeightOfHero()
+				}, 450)
+			})
+			fixHeightOfHero()
 	</script>
 </body>
 
