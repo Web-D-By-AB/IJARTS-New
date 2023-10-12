@@ -445,6 +445,27 @@
 			Aura International Publishing House
 		</a>
 	</footer>
+	<script type="module">
+		// Import functions from Firebase JavaScript SDK libraries from the CDN
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+		import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";
+
+		// Firebase configuration
+		const firebaseConfig = {
+			apiKey: "AIzaSyC2f-xR7itftVPFS14E19_uxSB-6ibAIyk",
+			authDomain: "ijarts.firebaseapp.com",
+			projectId: "ijarts",
+			storageBucket: "ijarts.appspot.com",
+			messagingSenderId: "49783332319",
+			appId: "1:49783332319:web:912c174430ede2f298b86a",
+			measurementId: "G-V25HKRD9XL"
+		};
+
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+		analytics.logEvent("archives_page_visited")
+	</script>
 	<script type="text/javascript" src="/assets/js/scripts.js">
 	</script>
 </body>
