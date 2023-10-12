@@ -1,0 +1,297 @@
+:root {
+    --white: #FFF;
+    --black: #000;
+    --purple: #B55AFD;
+    --darkPurple: #231F20;
+    --baseBlue: #4679E1;
+    --navyBlue1: #004A98;
+    --yellow: #FFDE59;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+section {
+    padding: 1.5rem 0
+}
+
+nav.navbar {
+    padding: 1rem;
+    text-transform: capitalize;
+    /* position: sticky;
+    top: 0px; */
+    z-index: 100;
+}
+
+.navbar-brand>img {
+    height: 2.5rem;
+}
+
+.navbar-nav>* {
+    margin: 0.5rem 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+.text-serif {
+    font-family: 'Source Serif Pro', serif;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+h2,
+h3 {
+    font-weight: 400;
+}
+
+h4 {
+    font-weight: 300;
+}
+
+.btn {
+    font-weight: 600;
+}
+
+.btn-purple {
+    color: var(--purple);
+    border-color: var(--purple);
+}
+
+.btn-purple:hover {
+    color: var(--white);
+    background-color: var(--purple);
+}
+
+.bg-purple {
+    background-color: var(--purple);
+}
+
+.bg-baseBlue {
+    background-color: var(--baseBlue);
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+.bg-hex {
+    background-image: url("https://i.ibb.co/5n7fWSw/Hxagon-Pattern.png");
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: -40px 100%;
+}
+
+.text-baseBlue {
+    color: var(--baseBlue);
+}
+
+.text-blue {
+    color: var(--navyBlue1);
+}
+
+#hero {
+    min-height: 36rem;
+    width: 100%;
+    margin: 0;
+}
+
+#hero-bg {
+    position: absolute;
+    height: 42rem;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-image: url("https://images.unsplash.com/photo-1507413245164-6160d8298b31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-position: 50% 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px) brightness(50%);
+    z-index: -100;
+}
+
+#hero-content {
+    margin: 2rem auto 0;
+    width: 70%;
+    z-index: 50;
+}
+
+#hero-content>* {
+    margin: 2rem 0.5rem 0;
+}
+
+.hero-buttons {
+    margin-top: 2rem;
+}
+
+#features {
+    padding: 1rem;
+}
+
+.feature {
+    transition: 0.4s;
+    margin: 1.5rem auto;
+}
+
+.feature:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.features-heading {
+    line-height: 2.5;
+    padding: 1rem;
+    color: var(--navyBlue1);
+}
+
+#about .card {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+}
+
+#about .card-body {
+    color: #bbb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+#about .row> :nth-child(1) {
+    padding: 1rem;
+}
+
+#about .ijarts-cover {
+    margin: 0.5rem auto 2rem;
+    width: 18rem;
+    height: auto;
+    -moz-box-shadow: 3px 3px 5px 6px #555;
+    -webkit-box-shadow: 3px 3px 5px 6px #555;
+    box-shadow: 3px 3px 5px 6px #555;
+}
+
+#about .ijarts-about-table {
+    width: 75vw;
+    margin-bottom: 2rem;
+}
+
+#about .coming-soon {
+    background-color: var(--purple);
+    color: var(--white);
+    font-weight: 600;
+}
+
+#about .card-text {
+    padding: 4rem 0 2rem;
+    line-height: 1.5;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#objectives .objective-boxes-container> :nth-child(1),
+.objective-boxes-container> :nth-child(3) {
+    height: 15rem;
+}
+
+#objectives .objective-box {
+    min-width: 18rem;
+    align-self: center;
+    transition: 0.4s;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#objectives .objective-box:hover {
+    min-width: 18rem;
+    align-self: center;
+    transform: scale(1.025);
+    cursor: pointer;
+}
+
+#scope .scope-box {
+    height: 25rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scope .scope-bg {
+    position: absolute;
+    height: 25rem;
+    width: inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(1px) brightness(50%);
+}
+
+#scope .scope-bg.scope-1 {
+    background-image: url("https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80");
+}
+
+#scope .scope-bg.scope-2 {
+    background-image: url("https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+}
+
+#scope .scope-bg.scope-3 {
+    background-image: url("https://images.unsplash.com/photo-1627920769541-daa658ed6b59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1333&q=80");
+}
+
+#scope .scope-bg.scope-4 {
+    background-image: url("https://images.unsplash.com/photo-1553406830-f6e44ac97624?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80");
+    filter: blur(2px) brightness(40%);
+}
+
+#scope .scope-bg.scope-5 {
+    background-image: url("https://images.unsplash.com/photo-1627021741107-7bdd2782c5ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    filter: brightness(40%);
+}
+
+#scope .scope-bg.scope-6 {
+    background-image: url("https://images.unsplash.com/photo-1594050157186-4d2a5dc0c990?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+}
+
+#scope .scope-bg.scope-7 {
+    background-image: url("https://cdn.pixabay.com/photo/2016/03/04/19/36/gears-1236578_960_720.jpg");
+    filter: blur(2px) brightness(40%);
+}
+
+#scope .scope-bg.scope-8 {
+    background-image: url("https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+}
+
+#scope .scope-bg.scope-9 {
+    background-image: url("https://cdn.pixabay.com/photo/2018/02/28/15/17/red-blood-cells-3188223_960_720.jpg");
+}
+
+#scope .scope-bg.scope-10 {
+    background-image: url("https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+#scope .scope-box .h3 {
+    z-index: 50;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 600px) {
+    #hero-content {
+        margin: 0 auto;
+        width: 80%;
+        font-size: 2rem;
+    }
+
+    #about .card-text {
+        text-align: center;
+    }
+}
